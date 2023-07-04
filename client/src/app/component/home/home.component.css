@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,700&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root{
+    --pink:#ff0310;
+}
+
+
+*{
+    font-family: 'Nunito',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+*::selection{
+    background: var(--pink);
+    color: white;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+body{
+    background: rgb(248, 248, 248);
+    overflow: hidden;
+}
+
+
+  
+  
+  
+  
+
+
+
+
+  .home{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    height: 90vh;
+    align-items: center;
+    background: linear-gradient(#0000002d, #00000048), url('../../../assets/images/home-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    padding-left: 5%;
+    
+}
+  .home .content{
+    flex: 1 1 40rem;
+    color:white;
+}
+
+
+.home .content h3{
+    font-size: 4.5rem;
+    width: 70%;
+    /* color: rgb(212, 237, 250); */
+    color: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(194,215,251,1) 28%, rgba(52,100,192,1) 40%);
+    font-weight: bold;
+    
+}
+
+.home .content p{
+    font-size: 1.rem;
+    color: #ffffff; 
+    padding: 1rem 0 ;
+    width: 60%;
+}
+
+.btn{
+    display: inline-block;
+    padding: 0.7rem 3rem;
+    border: 0.5rem solid var(--pink);
+    color: var(--pink);
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    margin-top: 1rem;
+}

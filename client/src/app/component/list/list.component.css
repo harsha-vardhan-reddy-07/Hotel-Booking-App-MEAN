@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,700&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root{
+    --pink:#ff0310;
+}
+ 
+
+*{
+    font-family: 'Nunito',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+*::selection{
+    background: var(--pink);
+    color: white;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+body{
+    background: rgb(248, 248, 248);
+}
+
+
+.popular .box-container{
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 2rem;
+    row-gap: 3rem;
+}
+
+.popular .box-container .box{
+    /* padding: 1rem; */
+    background: #fff;
+    cursor: pointer;
+    border-radius: .5rem;
+    text-align: center;
+    position: relative;
+    height: 80vh;
+    width: 27vw;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.popular .box-container .box:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.popular .box-container .box .card{
+    border: none;
+}
+
+
+.popular .box-container .box img{
+     height: 15rem;
+     object-fit: cover;
+     width: 100%;
+     border-radius: .5rem;
+}
+
+.popular .box-container .box h3{
+    color: #05416c;
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+
+.popular .box-container .box p{
+    /* color: #05416c; */
+    font-size: 1rem;
+}
+
+
+.btn{
+    padding: 0.7rem 2rem;
+    margin-top: 10%;
+}
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

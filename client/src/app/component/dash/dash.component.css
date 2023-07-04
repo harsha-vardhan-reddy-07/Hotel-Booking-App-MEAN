@@ -1,0 +1,28 @@
+nav {
+    background-color: rgb(64, 128, 216);
+    overflow: hidden;
+    min-height: 10vh;
+  }
+
+nav .navbar-brand{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+  nav  a {
+    
+    color: rgb(245, 236, 236);
+    text-align: center;
+    
+    text-decoration: none;
+    font-size: 17px;
+    cursor: pointer;
+  }
+
+  nav a:hover {
+    color: rgb(255, 255, 255);
+  }
