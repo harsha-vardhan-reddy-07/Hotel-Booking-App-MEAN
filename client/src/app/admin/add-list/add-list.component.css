@@ -1,0 +1,25 @@
+.add-product-container {
+    border: 1px solid#ccc;
+    padding: 40px;
+    margin: 10px;
+    overflow-y: scroll;
+    height: 80vh;
+    width: 40vw !important;    
+}
+
+form{
+    width: 100% !important;
+}
+form input{
+    width: 30vw !important;
+}
+
+form textarea{
+    width: 30vw !important;
+}
+
+.d-flex{
+    height: fit-content;
+    
+}
+

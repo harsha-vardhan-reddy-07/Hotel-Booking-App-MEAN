@@ -1,0 +1,58 @@
+<div class="d-flex">
+    <app-dasboard></app-dasboard>
+
+    <div class="add-product-container" style="width: 800px;">
+        <div class="card" style="border: none;">
+            <form #hotelForm="ngForm" (ngSubmit)="submitForm(hotelForm)">
+                <h1 style="color: #104bb7; font-size: 38px; font-weight: bold; text-align: center;" class="mb-4">Add New Hotel</h1>
+                <div class="add-product-form-container row">
+                    <div class="col-6 col-12 col-md-6" >
+                        <div class="form-group mb-2">
+                            <label for="hotelname">Hotel name</label>
+                            <input placeholder="Enter hotelname" type="text" [(ngModel)]="hotel.HotelName" class="form-control" id="hotelname"
+                                name="hotelName" required>
+                        </div> 
+                        <div class="form-group mb-2">
+                            <label for="address">Address</label>
+                            <input placeholder="Enter address" type="text" [(ngModel)]="hotel.Address" class="form-control" id="address"
+                                name="Address" required>
+                        </div>
+
+                        <div class="form-group mb-2">
+                            <label for="image">Main Image</label>
+                            <input placeholder="Enter image url" type="text" [(ngModel)]="hotel.image" class="form-control" id="image"
+                                name="image" required>
+                        </div>
+                        <div class="form-group mb-2">
+                            <label for="image">Room Images</label><br>
+                            <input placeholder="Enter image URLs (seperate with comma)" type="text" [(ngModel)]="carouselImages" class="form-control" id="carouselImages"
+                                name="carouselImages" required>
+                        </div>
+
+                        <div class="form-group mb-2">
+                            <label for="roomTypes">Room Types</label>
+                            <input placeholder="Enter room types (separated by comma)" type="text" [(ngModel)]="roomTypesInput" class="form-control" id="roomTypes"
+                                name="roomTypes" required>
+                        </div>
+
+                        <div class="form-group mb-2">
+                            <label for="roomCosts">Room Costs</label>
+                            <input placeholder="Enter room costs (separated by comma)" type="text" [(ngModel)]="roomCostsInput" class="form-control" id="roomCosts"
+                                name="roomCosts" required>
+                        </div>
+
+
+                        <div class="form-group mb-2">
+                            <label for="rating">Rating</label>
+                            <input placeholder="Enter rating" type="text" [(ngModel)]="hotel.rating" class="form-control" id="rating"
+                                name="rating" required>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary mt-4 w-100">Add Hotel</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+

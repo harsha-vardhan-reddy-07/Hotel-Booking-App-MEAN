@@ -1,0 +1,64 @@
+<div class="d-flex" >
+    <!-- <app-dasboard></app-dasboard> -->
+
+    <div class="update-form-container">
+
+   
+
+<form class="profile-form" (submit)="update()">
+    <div class="form-group">
+      <label for="hotelName">Hotel Name:</label> 
+      <input class="form-control" type="text" id="hotelName" [(ngModel)]="bookingData.HotelName" value={{bookingData.HotelName}} name="HotelName" required>
+    </div>
+   
+    <div class="form-group">
+      <label for="bookingName">Name:</label>
+      <input class="form-control" type="text" id="bookingName" [(ngModel)]="bookingData.name" name="bookingName" required>
+    </div>
+   
+  
+    <div class="form-group">
+      <label for="Email">Email:</label>
+      <input class="form-control" type="email" id="Email" [(ngModel)]="bookingData.email" name="Email" required>
+    </div>
+  
+    <div class="form-group">
+      <label for="checkInDate">CheckIn:</label>
+      <input class="form-control" type="date" id="checkInDate" [(ngModel)]="bookingData.checkInDate" [value]="bookingData.checkInDate" name="checkInDate" required>
+    </div>
+
+    <div class="form-group">
+        <label for="checkOutDate">CheckOut:</label>
+        <input class="form-control" type="date" id="checkOutDate" [(ngModel)]="bookingData.checkOutDate" name="checkOutDate" required>
+      </div>
+     
+      <div class="form-group">
+        <label for="roomType">Room type:</label>
+        <input class="form-control" type="text" id="roomType" [(ngModel)]="bookingData.room" name="roomType" required>
+      </div>
+     
+    
+      <div class="form-group">
+        <label for="Adults">Adults:</label>
+        <input class="form-control" type="number" id="Adults" [(ngModel)]="bookingData.adults" name="Adults" required>
+      </div>
+    
+      <div class="form-group">
+        <label for="children">Children:</label>
+        <input class="form-control" type="number" id="children" [(ngModel)]="bookingData.children" name="children" required>
+      </div>
+
+      <div class="form-group">
+        <label for="Cost">Cost:</label>
+        <input class="form-control" type="number" id="Cost" [(ngModel)]="bookingData.cost" name="Cost" required>
+      </div>
+     
+      <div class="form-group">
+        <label for="BookingStatus">Booking status:</label>
+        <input class="form-control" type="text" id="BookingStatus" [(ngModel)]="bookingData.bookingStatus" name="BookingStatus" required>
+      </div>
+  
+    <button class="btn btn-primary "  type="submit">Update</button>
+  </form>
+</div>
+</div>

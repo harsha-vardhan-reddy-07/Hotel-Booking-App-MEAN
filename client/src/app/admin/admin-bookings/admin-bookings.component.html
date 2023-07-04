@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+th, td {
+  text-align: center;
+}
+</style>
+<body>
+   <app-admin-dash2></app-admin-dash2>
+
+
+  <div class="flex">
+ 
+    <ul class="list-group p-4">
+        
+        <li class="list-group-item" *ngFor="let booking of List">
+          <div class="col card p-4">
+            <div>
+                <strong>Boooking Id:</strong> {{ booking._id }}
+            </div>
+            <div>
+              <strong>Hotel Name:</strong> {{ booking.HotelName }}
+            </div>
+            <div>
+              <strong> Name:</strong> {{ booking.name }}
+            </div>
+            
+            <div>
+              <strong>Email:</strong> {{ booking.email }}
+            </div>
+            <div>
+                <strong>CheckIn Date:</strong> {{ booking.checkInDate }}
+            </div>
+            <div>
+              <strong>CheckOut Date:</strong> {{ booking.checkOutDate }}
+            </div>
+            <div>
+                <strong>Adults:</strong> {{ booking.adults}}
+            </div>
+            <div>
+                <strong>Children:</strong> {{ booking.children }}
+            </div>
+            <div>
+              <strong>Room type:</strong> {{ booking.room }}
+          </div>
+          <div>
+            <strong>Cost:</strong> {{ booking.cost }}
+          </div>
+          <div>
+            <strong>Booking status:</strong> {{ booking.bookingStatus }}
+          </div>
+          <button type="button" class="btn btn-primary" (click)="Edit(booking._id)">Edit</button>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+
+
+  
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+th, td {
+  text-align: center;
+}
+</style>
+<body>
+  <div class="d-flex">
+    <app-dasboard></app-dasboard>
+  <div class="container pt-2 w-100" *ngIf="!isLoading">
+  <h1 style="color: #104bb7; font-size: 38px; font-weight: bold; text-align: center;" class="mb-4">All Bookings</h1>
+   
+  <div class="tableContainer">
+      <table style="width: 100%;">
+        <tr>
+          <th>Booking ID</th>
+          <th>Hotel Name</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>CheckIn Date</th>
+          <th>CheckOut Date</th>
+          <th>Adults</th>
+          <th>Children</th>
+          <th>Room type</th>
+          <th>Cost</th>
+        </tr>
+        <ng-container *ngFor="let booking of List">
+          <tr>
+            <td>{{booking._id}}</td>
+            <td>{{booking.HotelName}}</td>
+            <td>{{booking.name}}</td>
+            <td>{{booking.email}}</td>
+            <td>{{booking.checkInDate}}</td>
+            <td>{{booking.checkOutDate}}</td>
+            <td>{{booking.adults}}</td>
+            <td>{{booking.children}}</td>
+            <td>{{booking.room}}</td>
+            <td>{{booking.cost}}</td>
+
+          </tr>
+        </ng-container>
+      </table>
+
+    </div>
+
+</div>
+  </div>
+</body>
+</html>

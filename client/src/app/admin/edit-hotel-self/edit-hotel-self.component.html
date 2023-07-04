@@ -1,0 +1,41 @@
+<div class="d-flex" >
+<form class="profile-form" (submit)="update()">
+    <div class="form-group">
+      <label for="HotelName">Hotel Name:</label>
+      <input class="form-control" type="text" id="firstname" [(ngModel)]="user.HotelName" name="HotelName" required>
+    </div>
+   
+    <div class="form-group">
+      <label for="Address">Address:</label>
+      <input class="form-control" type="text" id="Address" [(ngModel)]="user.Address" name="Address" required>
+    </div>
+   
+  
+    <div class="form-group"> 
+      <label for="image">image:</label>
+      <input class="form-control" type="text" id="image" [(ngModel)]="user.image" name="image" required>
+    </div>
+
+    <div class="form-group"> 
+      <label for="Roomimages">Room Images:</label>
+      <input class="form-control" type="text" id="Roomimages" [(ngModel)]="roomImg" name="roomimages" required>
+    </div>
+
+    <div class="form-group"> 
+      <label for="roomTypes">Room Types:</label>
+      <input class="form-control" type="text" id="roomTypes" [(ngModel)]="roomType" name="roomTypes" required>
+    </div>
+  
+    <div class="form-group"> 
+      <label for="roomCosts">Room Costs:</label>
+      <input class="form-control" type="text" id="roomCosts" [(ngModel)]="roomCost" name="roomCosts" required>
+    </div>
+
+    <div class="form-group">
+      <label for="rating">Rating:</label>
+      <input class="form-control" type="text" id="rating" [(ngModel)]="user.rating" name="rating" required>
+    </div>
+  
+    <button class="btn btn-primary "  type="submit">Update</button>
+  </form>
+</div> 

@@ -1,0 +1,30 @@
+<div class="cc">
+    <form [formGroup]="supLogForm" #r="ngForm" (ngSubmit)="onSubmit(r.value)" class="form">
+        <h2 class="heading text-center">Admin Login Form</h2>
+        <div class="form-group mb-2">
+          <label for="HotelName">Super Admin</label>
+          <input placeholder="Enter HotelName" type="text" class="form-control" id="Admin" formControlName="Admin" required>
+          <div *ngIf="supLogForm.controls['Admin'].touched && supLogForm.controls['Admin'].errors">
+            <div *ngIf="supLogForm.controls['Admin'].errors['required']" class="error-message text-danger">
+              Admin userId is required
+            </div>
+          </div>
+        </div>
+        <div class="form-group mb-2">
+          <label for="password">Password</label>
+          <input placeholder="Enter password" type="password" class="form-control" id="password" formControlName="password" required>
+          <div *ngIf="supLogForm.controls['password'].touched && supLogForm.controls['password'].errors">
+            <div *ngIf="supLogForm.controls['password'].errors['required']" class="error-message text-danger">
+              Password is required
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary mt-4 w-100" >Sign In</button>
+       
+        <div class="mt-2" style="display: flex; justify-content: space-between;">
+          <a routerLink="/admin/login" class="mt-2">Hotel login</a>
+          <a routerLink="/login" class="mt-2">User login</a>
+        </div>
+    
+      </form>
+</div> 
